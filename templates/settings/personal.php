@@ -12,7 +12,7 @@ style('facerecognition', 'facerecognition');
 	<h2><?php p($l->t('Face Recognition'));?></h2>
 	<p class="settings-hint"><?php p($l->t('Here you can see photos of your friends that are recognized'));?></p>
 	<p>
-		<input id="enableFacerecognition" type="checkbox" class="checkbox">
+		<input id="enableFacerecognition" type="checkbox" class="checkbox" <?php if ($_['enabled'] === true) print_unescaped('checked="checked"'); ?>/>
 		<label for="enableFacerecognition"><?php p($l->t("Allow the analysis of my photos to recognize my friends."));?></label>
 	</p>
 {{#if persons}}
