@@ -126,7 +126,7 @@ View.prototype = {
                     t('facerecognition', 'Disable facial recognition'),
                     function (result) {
                         if (result === true) {
-                            self.setEnabledUser ('false');
+                            self.setEnabledUser (false);
                         } else {
                             $('#enableFacerecognition').prop('checked', true);
                         }
@@ -134,7 +134,7 @@ View.prototype = {
                     true
                 );
             } else {
-                self.setEnabledUser ('true');
+                self.setEnabledUser (true);
             }
         });
 
